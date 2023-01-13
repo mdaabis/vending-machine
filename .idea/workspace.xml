@@ -4,11 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c47485e6-d872-4f06-b7d3-5c891651ea74" name="Changes" comment="" />
+    <list default="true" id="c47485e6-d872-4f06-b7d3-5c891651ea74" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/models/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/utils/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/utils/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/VendingMachineApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/VendingMachineApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/models/Product.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -21,6 +40,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2KEmbeP2jqJsg8Cy4mggORztxqL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,5 +63,16 @@
       <updated>1673548188534</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
