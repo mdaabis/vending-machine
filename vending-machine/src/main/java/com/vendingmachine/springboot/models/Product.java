@@ -1,57 +1,59 @@
 package com.vendingmachine.springboot.models;
 
+import java.math.BigDecimal;
+
 public class Product
 {
-    private String mProductName;
-    private int mAmountAvailable;
-    private double mCost;
-    private String mSellerId;
+    private String productName;
+    private int amountAvailable;
+    private BigDecimal cost;
+    private String sellerId;
 
-    public Product(String mProductName, int mAmountAvailable, double mCost, String mSellerId)
+    public Product(String productName, int amountAvailable, BigDecimal cost, String sellerId)
     {
-        this.mProductName = mProductName;
-        this.mAmountAvailable = mAmountAvailable;
-        this.mCost = mCost;
-        this.mSellerId = mSellerId;
+        this.productName = productName;
+        this.amountAvailable = amountAvailable;
+        this.cost = cost;
+        this.sellerId = sellerId;
     }
 
     public String getProductName()
     {
-        return mProductName;
+        return productName;
     }
 
-    public void setProductName(String mProductName)
+    public void setProductName(String productName)
     {
-        this.mProductName = mProductName;
+        this.productName = productName;
     }
 
     public int getAmountAvailable()
     {
-        return mAmountAvailable;
+        return amountAvailable;
     }
 
-    public void setAmountAvailable(int mAmountAvailable)
+    public void setAmountAvailable(int amountAvailable)
     {
-        this.mAmountAvailable = mAmountAvailable;
+        this.amountAvailable = amountAvailable;
     }
 
-    public double getCost()
+    public BigDecimal getCost()
     {
-        return mCost;
+        return cost;
     }
 
-    public void setCost(double mCost)
+    public void setCost(BigDecimal cost)
     {
-        this.mCost = mCost;
+        this.cost = cost;
     }
 
     public String getSellerId()
     {
-        return mSellerId;
+        return sellerId;
     }
 
-    public void setSellerId(String mSellerId)
+    public void setSellerId(String sellerId)
     {
-        this.mSellerId = mSellerId;
+        this.sellerId = sellerId;
     }
 }

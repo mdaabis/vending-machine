@@ -1,57 +1,59 @@
 package com.vendingmachine.springboot.models;
 
+import java.math.BigDecimal;
+
 public class Transaction
 {
-    private String mUser;
-    private String mProductPurchased;
-    private double mSpent;
-    private double mChange;
+    private String user;
+    private String productPurchased;
+    private BigDecimal spent;
+    private BigDecimal change;
 
-    public Transaction(String mUser, String mProductPurchased, double mSpent, double mChange)
+    public Transaction(String user, String productPurchased, BigDecimal spent, BigDecimal change)
     {
-        this.mUser = mUser;
-        this.mProductPurchased = mProductPurchased;
-        this.mSpent = mSpent;
-        this.mChange = mChange;
+        this.user = user;
+        this.productPurchased = productPurchased;
+        this.spent = spent;
+        this.change = change;
     }
 
-    public String getUser() 
+    public String getUser()
     {
-        return mUser;
+        return user;
     }
 
-    public void setUser(String mUser) 
+    public void setUser(String user)
     {
-        this.mUser = mUser;
+        this.user = user;
     }
 
-    public String getProductPurchased() 
+    public String getProductPurchased()
     {
-        return mProductPurchased;
+        return productPurchased;
     }
 
-    public void setProductPurchased(String mProductPurchased) 
+    public void setProductPurchased(String productPurchased)
     {
-        this.mProductPurchased = mProductPurchased;
+        this.productPurchased = productPurchased;
     }
 
-    public double getSpent() 
+    public BigDecimal getSpent()
     {
-        return mSpent;
+        return spent;
     }
 
-    public void setSpent(double mSpent) 
+    public void setSpent(BigDecimal spent)
     {
-        this.mSpent = mSpent;
+        this.spent = spent;
     }
 
-    public double getChange() 
+    public BigDecimal getChange()
     {
-        return mChange;
+        return change;
     }
 
-    public void setChange(double mChange) 
+    public void setChange(BigDecimal change)
     {
-        this.mChange = mChange;
+        this.change = change;
     }
 }
