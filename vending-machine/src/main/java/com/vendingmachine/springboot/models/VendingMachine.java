@@ -1,75 +1,61 @@
-package com.vendingmachine.springboot.models;
-
-import java.math.BigDecimal;
-import java.util.HashMap;
-import java.util.Map;
-
-public class VendingMachine
-{
-    private static VendingMachine SINGLETON_INSTANCE = null;
-
-    // Inventory
-    private Map<Product, Integer> products;
-    private int itemsSold;
-
-    // Money
-    private BigDecimal balance;
-    private BigDecimal changeReturned;
-
-    public VendingMachine()
-    {
-        products = new HashMap<>();
-        itemsSold = 0;
-        balance = new BigDecimal(0);
-        changeReturned = new BigDecimal(0);
-    }
-
-    public VendingMachine getInstance()
-    {
-        if (SINGLETON_INSTANCE == null)
-        {
-            SINGLETON_INSTANCE = new VendingMachine();
-        }
-        return SINGLETON_INSTANCE;
-    }
-
-    public Map<Product, Integer> getProducts()
-    {
-        return products;
-    }
-
-    public void setProducts(Map<Product, Integer> products)
-    {
-        this.products = products;
-    }
-
-    public int getItemsSold()
-    {
-        return itemsSold;
-    }
-
-    public void setItemsSold(int itemsSold)
-    {
-        this.itemsSold = itemsSold;
-    }
-
-    public BigDecimal getBalance()
-    {
-        return balance;
-    }
-
-    public void setBalance(BigDecimal balance)
-    {
-        this.balance = balance;
-    }
-
-    public BigDecimal getChangeReturned()
-    {
-        return changeReturned;
-    }
-
-    public void setChangeReturned(BigDecimal changeReturned)
-    {
-        this.changeReturned = changeReturned;
-    }
-}
+//package com.vendingmachine.springboot.models;
+//
+//import jakarta.persistence.*;
+//import jakarta.transaction.Transactional;
+//import jakarta.validation.constraints.NotNull;
+//import lombok.Data;
+//import lombok.NoArgsConstructor;
+//
+//@Entity
+//@Transactional
+//@Data
+//@NoArgsConstructor
+//@Table(name = "vending_machine")
+//public class VendingMachine
+//{
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @Column(name = "item_number")
+//    private int itemNumber;
+//
+////    @NotNull
+////    @OneToOne(cascade = CascadeType.ALL)
+////    @JoinColumn(name = "fk_product_id")
+////    private Product product;
+//
+//    @NotNull
+//    @Column(name = "quantity")
+//    private int quantity;
+//
+//    @NotNull
+//    @Column(name = "seller_id")
+//    private String sellerId;
+//
+//    public int getItemNumber() {
+//        return itemNumber;
+//    }
+//
+////    public String getProductId() {
+////        return productId;
+////    }
+////
+////    public void setProductId(String productId) {
+////        this.productId = productId;
+////    }
+//
+//    public int getQuantity() {
+//        return quantity;
+//    }
+//
+//    public void setQuantity(int quantity) {
+//        this.quantity = quantity;
+//    }
+//
+//    public String getSellerId() {
+//        return sellerId;
+//    }
+//
+//    public void setSellerId(String sellerId) {
+//        this.sellerId = sellerId;
+//    }
+//}

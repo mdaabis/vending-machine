@@ -1,20 +1,37 @@
 package com.vendingmachine.springboot.models;
 
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+
 import java.math.BigDecimal;
 
+@Entity
+@Table(name = "products")
 public class Product
 {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private int productId;
+
+    @NotNull
+    @Column(name = "product_name", unique = true)
     private String productName;
-//    private int amountAvailable;
+
+    @NotNull
+    @Column(name = "product_quantity", unique = true)
+    private String productQuantity;
+
+    @NotNull
+    @Column(name = "cost")
     private BigDecimal cost;
+
+    @NotNull
+    @Column(name = "seller_id")
     private String sellerId;
 
-    public Product(String productName, BigDecimal cost, String sellerId)
-    {
-        this.productName = productName;
-//        this.amountAvailable = amountAvailable;
-        this.cost = cost;
-        this.sellerId = sellerId;
+    public int getProductId() {
+        return productId;
     }
 
     public String getProductName()
@@ -26,16 +43,14 @@ public class Product
     {
         this.productName = productName;
     }
-//
-//    public int getAmountAvailable()
-//    {
-//        return amountAvailable;
-//    }
-//
-//    public void setAmountAvailable(int amountAvailable)
-//    {
-//        this.amountAvailable = amountAvailable;
-//    }
+
+    public String getProductQuantity() {
+        return productQuantity;
+    }
+
+    public void setProductQuantity(String productQuantity) {
+        this.productQuantity = productQuantity;
+    }
 
     public BigDecimal getCost()
     {

@@ -1,40 +1,81 @@
 package com.vendingmachine.springboot.models;
 
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+
 import java.math.BigDecimal;
 
+@Entity
+@Table(name = "transactions")
 public class Transaction
 {
-    private String user;
-    private String productPurchased;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private int transactionId;
+
+    @NotNull
+    @Column(name = "buyer_id")
+    private String buyerId;
+
+    @NotNull
+    @Column(name = "product_name")
+    private String productName;
+
+    @NotNull
+    @Column(name = "cost")
+    private BigDecimal cost;
+    
+    @NotNull
+    @Column(name = "spent")
     private BigDecimal spent;
+    
+    @NotNull
+    @Column(name = "change_given")
     private BigDecimal change;
 
-    public Transaction(String user, String productPurchased, BigDecimal spent, BigDecimal change)
-    {
-        this.user = user;
-        this.productPurchased = productPurchased;
-        this.spent = spent;
-        this.change = change;
+//    public Transaction()
+//    {
+//    }
+//
+//    public Transaction(String buyerId, String productName, BigDecimal cost, BigDecimal spent, BigDecimal change) {
+//        this.buyerId = buyerId;
+//        this.productName = productName;
+//        this.cost = cost;
+//        this.spent = spent;
+//        this.change = change;
+//    }
+
+    public int getTransactionId() {
+        return transactionId;
     }
 
-    public String getUser()
+    public String getBuyerId()
     {
-        return user;
+        return buyerId;
     }
 
-    public void setUser(String user)
+    public void setBuyerId(String buyer)
     {
-        this.user = user;
+        this.buyerId = buyer;
     }
 
-    public String getProductPurchased()
+    public String getProductName()
     {
-        return productPurchased;
+        return productName;
     }
 
-    public void setProductPurchased(String productPurchased)
+    public void setProductName(String productName)
     {
-        this.productPurchased = productPurchased;
+        this.productName = productName;
+    }
+
+    public BigDecimal getCost() {
+        return cost;
+    }
+
+    public void setCost(BigDecimal cost) {
+        this.cost = cost;
     }
 
     public BigDecimal getSpent()

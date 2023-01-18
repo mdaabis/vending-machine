@@ -1,7 +1,6 @@
 package com.vendingmachine.springboot.models;
 
 import com.vendingmachine.springboot.utils.Role;
-import jakarta.annotation.Nonnull;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 
@@ -13,18 +12,22 @@ public class User
 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id")
+    @Column(name = "id")
     private int userId;
 
-    @Column(name = "username")
+    @NotNull
+    @Column(name = "username", unique = true)
     private String username;
 
-    @Column(name = "pass")
+    @NotNull
+    @Column(name = "password")
     private String password;
 
-    @Column(name = "roles")
-    private String role;
+    @NotNull
+    @Column(name = "role")
+    private Role role;
 
+    @NotNull
     @Column(name = "deposit")
     private BigDecimal deposit;
 
@@ -53,13 +56,17 @@ public class User
         this.password = password;
     }
 
-    public String getRole()
+    public Role getRole()
     {
         return role;
     }
 
     public void setRole(String role)
     {
+        this.role = Role.valueOf(role);
+    }
+
+    public void setRole(Role role) {
         this.role = role;
     }
 

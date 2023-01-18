@@ -16,4 +16,16 @@ public enum Role
     {
         return role;
     }
+
+    public static Role getRoleEnum(String role) {
+        switch (role.toLowerCase()) {
+            case "buyer":
+                return Role.BUYER;
+            case "seller":
+                return Role.SELLER;
+            default:
+                throw new IllegalArgumentException("Role [" + role
+                        + "] not supported.");
+        }
+    }
 }

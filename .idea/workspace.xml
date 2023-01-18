@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c47485e6-d872-4f06-b7d3-5c891651ea74" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/converters/RoleConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vending-machine/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vending-machine/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/models/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/models/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/models/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/models/VendingMachine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/utils/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/utils/Role.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +32,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
+    <option name="isDesignerTabSelected" value="false" />
     <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
