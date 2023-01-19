@@ -31,6 +31,16 @@ public class User
     @Column(name = "deposit")
     private BigDecimal deposit;
 
+    public User() {}
+
+    public User(String username, String password, Role role, BigDecimal deposit)
+    {
+        this.username = username;
+        this.password = password;
+        this.role = role;
+        this.deposit = deposit;
+    }
+
     public int getId()
     {
         return userId;

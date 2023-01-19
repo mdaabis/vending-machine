@@ -4,6 +4,7 @@ import com.vendingmachine.springboot.utils.Role;
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
 
+
 @Converter(autoApply = true)
 public class RoleConverter implements AttributeConverter<Role, String>
 {

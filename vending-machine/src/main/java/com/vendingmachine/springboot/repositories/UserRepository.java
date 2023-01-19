@@ -7,19 +7,13 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface UserRepository extends JpaRepository<User, Long>
+{
 
-//    @Param("username")
-//    @Query("SELECT u FROM User u WHERE u.username = ?1")
-//    List<User> getUsers(String username);
+    @Query(value = "SELECT * FROM users u WHERE u.username LIKE %:usernameSubstring%", nativeQuery = true)
+    List<User> getUsers(String usernameSubstring);
 
     @Query(value = "SELECT * FROM users WHERE username = :username", nativeQuery = true)
     List<User> findByUsername(@Param("username") String username);
-
-//    @Query("SELECT u FROM User u WHERE u.username")
-//    List<User> getUserViaUsername();
-
-//    @Query("SELECT u FROM User u WHERE u.username like :username%")
-//    List<User> findByUsenameStartingWith(String username);
 }
 

@@ -2,8 +2,8 @@ package com.vendingmachine.springboot.utils;
 
 public enum Role
 {
-    SELLER("seller"),
-    BUYER("buyer");
+    BUYER("buyer"),
+    SELLER("seller");
 
     private final String role;
 
@@ -17,15 +17,13 @@ public enum Role
         return role;
     }
 
-    public static Role getRoleEnum(String role) {
-        switch (role.toLowerCase()) {
-            case "buyer":
-                return Role.BUYER;
-            case "seller":
-                return Role.SELLER;
-            default:
-                throw new IllegalArgumentException("Role [" + role
-                        + "] not supported.");
-        }
+    public static Role getRoleEnum(String roleString)
+    {
+        return switch (roleString.toLowerCase()) {
+            case "buyer" -> Role.BUYER;
+            case "seller" -> Role.SELLER;
+            default -> throw new IllegalArgumentException("Role [" + roleString
+                    + "] not supported.");
+        };
     }
 }

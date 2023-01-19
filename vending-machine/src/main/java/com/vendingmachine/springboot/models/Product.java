@@ -30,7 +30,18 @@ public class Product
     @Column(name = "seller_id")
     private String sellerId;
 
-    public int getProductId() {
+    public Product() {}
+
+    public Product(String productName, String productQuantity, BigDecimal cost, String sellerId)
+    {
+        this.productName = productName;
+        this.productQuantity = productQuantity;
+        this.cost = cost;
+        this.sellerId = sellerId;
+    }
+
+    public int getProductId()
+    {
         return productId;
     }
 
@@ -44,11 +55,13 @@ public class Product
         this.productName = productName;
     }
 
-    public String getProductQuantity() {
+    public String getProductQuantity()
+    {
         return productQuantity;
     }
 
-    public void setProductQuantity(String productQuantity) {
+    public void setProductQuantity(String productQuantity)
+    {
         this.productQuantity = productQuantity;
     }
 

@@ -34,19 +34,21 @@ public class Transaction
     @Column(name = "change_given")
     private BigDecimal change;
 
-//    public Transaction()
-//    {
-//    }
-//
-//    public Transaction(String buyerId, String productName, BigDecimal cost, BigDecimal spent, BigDecimal change) {
-//        this.buyerId = buyerId;
-//        this.productName = productName;
-//        this.cost = cost;
-//        this.spent = spent;
-//        this.change = change;
-//    }
+    public Transaction()
+    {
+    }
 
-    public int getTransactionId() {
+    public Transaction(String buyerId, String productName, BigDecimal cost, BigDecimal spent)
+    {
+        this.buyerId = buyerId;
+        this.productName = productName;
+        this.cost = cost;
+        this.spent = spent;
+        this.change = spent.subtract(cost);
+    }
+
+    public int getTransactionId()
+    {
         return transactionId;
     }
 
@@ -70,11 +72,13 @@ public class Transaction
         this.productName = productName;
     }
 
-    public BigDecimal getCost() {
+    public BigDecimal getCost()
+    {
         return cost;
     }
 
-    public void setCost(BigDecimal cost) {
+    public void setCost(BigDecimal cost)
+    {
         this.cost = cost;
     }
 
