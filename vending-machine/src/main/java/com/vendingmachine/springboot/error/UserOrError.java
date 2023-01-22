@@ -9,33 +9,40 @@ public class UserOrError
     private HttpStatus status;
     private String message;
 
-    public UserOrError(User user, HttpStatus status, String message) {
+    public UserOrError(User user, HttpStatus status, String message)
+    {
         this.user = user;
         this.status = status;
         this.message = message;
     }
 
-    public User getUser() {
+    public User getUser()
+    {
         return user;
     }
 
-    public void setUser(User user) {
+    public void setUser(User user)
+    {
         this.user = user;
     }
 
-    public HttpStatus getStatus() {
+    public HttpStatus getStatus()
+    {
         return status;
     }
 
-    public void setStatus(HttpStatus status) {
+    public void setStatus(HttpStatus status)
+    {
         this.status = status;
     }
 
-    public String getMessage() {
+    public String getMessage()
+    {
         return message;
     }
 
-    public void setMessage(String message) {
+    public void setMessage(String message)
+    {
         this.message = message;
     }
 }

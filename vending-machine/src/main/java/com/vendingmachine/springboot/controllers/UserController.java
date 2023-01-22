@@ -5,7 +5,6 @@ import com.vendingmachine.springboot.models.User;
 import com.vendingmachine.springboot.repositories.UserRepository;
 import com.vendingmachine.springboot.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
