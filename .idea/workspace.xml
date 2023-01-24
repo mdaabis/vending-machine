@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c47485e6-d872-4f06-b7d3-5c891651ea74" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/controllers/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/error/UserOrError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/repositories/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/services/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/security/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/security/SecurityUserLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vending-machine/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vending-machine/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/utils/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/vending-machine/src/main/java/com/vendingmachine/springboot/utils/Role.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

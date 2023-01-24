@@ -19,6 +19,12 @@ public class UserController
     @Autowired
     private UserService userService;
 
+    @GetMapping("/home")
+    public String getHome()
+    {
+        return "Welcome to home";
+    }
+
     @GetMapping("/users")
     public List<User> getUsers(@RequestParam("username") Optional<String> usernameSubstring)
     {
@@ -27,13 +33,13 @@ public class UserController
                 .orElse(userRepository.findAll());
     }
 
-    @PostMapping(value = "/create-user", consumes = {"application/json"})
+    @PostMapping("/create-user")
     public UserOrError createUser(@RequestBody User user)
     {
         return userService.createUser(user);
     }
 
-    @PostMapping(value = "/user-exists", consumes = {"application/json"})
+    @PostMapping("/user-exists")
     public boolean userExists(@RequestBody User user)
     {
         return userService.userExists(user);

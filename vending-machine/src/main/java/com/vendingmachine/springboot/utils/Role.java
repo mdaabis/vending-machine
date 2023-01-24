@@ -1,5 +1,9 @@
 package com.vendingmachine.springboot.utils;
 
+import java.util.Arrays;
+import java.util.Objects;
+import java.util.stream.Collectors;
+
 public enum Role
 {
     BUYER("buyer"),
@@ -16,6 +20,13 @@ public enum Role
     {
         return role;
     }
+//
+//    public static String[] getRoles()
+//    {
+//        return (String[]) Arrays.stream(Role.values())
+//                .map(Role::getRole)
+//                .toArray();
+//    }
 
     public static Role getRoleEnum(String roleString)
     {
